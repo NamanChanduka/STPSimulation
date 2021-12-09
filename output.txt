@@ -1,0 +1,20 @@
+--------SENDING--------
+0 s B1 (B1 | 0 | B1) ||     Message sent on lan A
+0 s B1 (B1 | 0 | B1) ||     Message sent on lan B
+0 s B2 (B2 | 0 | B2) ||     Message sent on lan B
+0 s B2 (B2 | 0 | B2) ||     Message sent on lan C
+0 s B3 (B3 | 0 | B3) ||     Message sent on lan A
+-------RECEIVING-------
+1 r B1 (B3 | 0 | B3) || Message received on lan A
+1 r B1 (B2 | 0 | B2) || Message received on lan B
+1 r B3 (B1 | 0 | B1) || Message received on lan A
+1 r B2 (B1 | 0 | B1) || Message received on lan B
+--------SENDING--------
+1 s B1 (B1 | 0 | B1) ||     Message sent on lan A
+1 s B1 (B1 | 0 | B1) ||     Message sent on lan B
+1 s B2 (B1 | 1 | B2) ||     Message sent on lan C
+***************Spanning Tree Stopped***************
+
+B1: A-DP B-DP
+B2: B-RP C-DP
+B3: A-NP
